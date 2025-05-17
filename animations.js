@@ -83,49 +83,6 @@ document.addEventListener('DOMContentLoaded', function() {
             this.style.transform = 'scale(1)';
         });
     }
-    
-    // Animal card hover effects
-    const animalCards = document.querySelectorAll('.animal-card');
-    animalCards.forEach(card => {
-        card.addEventListener('mouseenter', function() {
-            this.style.transform = 'translateY(-10px)';
-            this.style.boxShadow = '0 12px 24px rgba(0, 0, 0, 0.15)';
-        });
-        
-        card.addEventListener('mouseleave', function() {
-            this.style.transform = '';
-            this.style.boxShadow = '';
-        });
-        
-        // Add click animation
-        card.addEventListener('click', function() {
-            this.style.transform = 'scale(0.97)';
-            setTimeout(() => {
-                this.style.transform = 'translateY(-10px)';
-            }, 150);
-        });
-    });
-    
-    // Quiz option selection
-    const quizOptions = document.querySelectorAll('.option');
-    quizOptions.forEach(option => {
-        option.addEventListener('click', function() {
-            // Remove selected class from siblings
-            const parentOptions = this.parentNode.querySelectorAll('.option');
-            parentOptions.forEach(opt => {
-                opt.classList.remove('selected');
-            });
-            
-            // Add selected class to clicked option
-            this.classList.add('selected');
-            
-            // Add a slight animation
-            this.style.transform = 'translateX(10px)';
-            setTimeout(() => {
-                this.style.transform = 'translateX(5px)';
-            }, 200);
-        });
-    });
 });
 
 // Function to create ripple effect on buttons
