@@ -26,7 +26,7 @@
     <section class="hero">
         <div class="container hero-content">
             <h1>Discover <strong>Survival Kingdom</strong></h1>
-            <p>A revolutionary digital experience designed to transform your visit to Naturhistorisk Museum. Follow the steps below to understand how our solution works and what makes it special.</p>
+            <p>A revolutionary digital experience designed to transform your visit to Naturhistorisk Museum. Test your survival knowledge and learn about fascinating animals through an interactive quiz adventure.</p>
         </div>
     </section>
 
@@ -36,71 +36,143 @@
             <h2>How Survival Kingdom Works</h2>
             <p>Our digital solution takes you on a journey through natural history, challenging you to understand survival mechanisms in the animal kingdom. Here's how it works:</p>
 
-            <!-- Step 1 -->
+            <!-- Step 1: QR Scan -->
             <div class="step">
                 <div class="step-content">
                     <div class="step-number">1</div>
-                    <h3>Download & Connect</h3>
-                    <p>Begin your journey by downloading the Survival Kingdom app on your smartphone or tablet. Connect to the museum's WiFi network for the best experience.</p>
-                    <p>The app uses a Futura-inspired design to ensure a seamless and intuitive user interface that matches the museum's visual identity.</p>
+                    <h3>Scan QR Code</h3>
+                    <p>Begin your adventure by scanning a QR code placed next to an exhibit in the museum. Each QR code launches the Survival Kingdom app and connects you to that specific animal or habitat.</p>
+                    <p>The QR codes are strategically placed throughout the museum to guide your exploration and create a personalized journey.</p>
                 </div>
                 <div class="step-image">
                     <!-- Placeholder for step image -->
                     <div style="background-color: #f0f0f0; height: 250px; display: flex; align-items: center; justify-content: center; border-radius: 8px;">
-                        <p>Download App Image</p>
+                        <p>QR Code Scanning</p>
                     </div>
                 </div>
             </div>
 
-            <!-- Step 2 -->
+            <!-- Step 2: Animal Selection -->
             <div class="step">
                 <div class="step-content">
                     <div class="step-number">2</div>
-                    <h3>Scan & Discover</h3>
-                    <p>As you explore the museum, scan the QR codes placed next to exhibits to unlock digital content related to each display. Learn fascinating facts about survival strategies in nature.</p>
+                    <h3>Choose Your Animal</h3>
+                    <p>After scanning the QR code, you'll be presented with a selection of animals related to the exhibit. Choose the animal you want to learn more about and test your survival knowledge against.</p>
                 </div>
                 <div class="step-image">
-                    <!-- Placeholder for step image -->
-                    <div style="background-color: #f0f0f0; height: 250px; display: flex; align-items: center; justify-content: center; border-radius: 8px;">
-                        <p>Scan QR Code Image</p>
+                    <!-- Animal Selection Grid Preview -->
+                    <div class="animal-grid" style="grid-template-columns: repeat(2, 1fr);">
+                        <div class="animal-card">
+                            <div class="animal-image">Wolf</div>
+                            <div class="animal-info">
+                                <h3>Wolf</h3>
+                                <p>Predator</p>
+                            </div>
+                        </div>
+                        <div class="animal-card">
+                            <div class="animal-image">Bear</div>
+                            <div class="animal-info">
+                                <h3>Bear</h3>
+                                <p>Omnivore</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
 
-            <!-- Step 3 -->
+            <!-- Step 3: Animal Information -->
             <div class="step">
                 <div class="step-content">
                     <div class="step-number">3</div>
-                    <h3>Complete Challenges</h3>
-                    <p>Engage with interactive challenges that test your knowledge and understanding of survival mechanisms. Collect digital badges as you successfully complete each task.</p>
+                    <h3>Learn About Your Animal</h3>
+                    <p>Once you've selected an animal, you'll be presented with fascinating information about its habitat, behavior, diet, and survival mechanisms. This educational content prepares you for the survival quiz.</p>
                 </div>
                 <div class="step-image">
-                    <!-- Placeholder for step image -->
-                    <div style="background-color: #f0f0f0; height: 250px; display: flex; align-items: center; justify-content: center; border-radius: 8px;">
-                        <p>Challenge Image</p>
+                    <!-- Animal Detail Preview -->
+                    <div style="background-color: #f0f0f0; padding: 20px; border-radius: 8px;">
+                        <div class="animal-detail-header">
+                            <div class="animal-detail-image">Wolf</div>
+                            <div>
+                                <h3>Gray Wolf</h3>
+                                <p>Apex predator of northern forests</p>
+                            </div>
+                        </div>
+                        <div class="animal-stats">
+                            <div class="stat-card">
+                                <div class="stat-value">80 km/h</div>
+                                <p>Running Speed</p>
+                            </div>
+                            <div class="stat-card">
+                                <div class="stat-value">7</div>
+                                <p>Pack Size</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
 
-            <!-- Step 4 -->
+            <!-- Step 4: Survival Quiz -->
             <div class="step">
                 <div class="step-content">
                     <div class="step-number">4</div>
-                    <h3>Create Your Survival Profile</h3>
-                    <p>Based on your interactions and choices, the app creates a personalized survival profile that highlights which natural adaptation strategies align with your thinking.</p>
+                    <h3>Take the Survival Quiz</h3>
+                    <p>Test your knowledge with a 4-question survival quiz that challenges you to respond correctly to animal encounters. The quiz simulates real-life scenarios where you might encounter the animal in the wild.</p>
+                    <p>Your choices determine your survival success and reveal how well you understand animal behavior in their natural habitats.</p>
                 </div>
                 <div class="step-image">
-                    <!-- Placeholder for step image -->
-                    <div style="background-color: #f0f0f0; height: 250px; display: flex; align-items: center; justify-content: center; border-radius: 8px;">
-                        <p>Profile Image</p>
+                    <!-- Quiz Preview -->
+                    <div class="quiz-container" style="margin: 0;">
+                        <div class="quiz-header" style="padding: 1rem;">
+                            <h3 style="margin: 0;">Wolf Survival Quiz</h3>
+                        </div>
+                        <div class="quiz-content" style="padding: 1rem;">
+                            <div class="question-card" style="padding: 1rem; margin-bottom: 0;">
+                                <h4 style="margin-top: 0;">What should you do if you encounter a wolf in the wild?</h4>
+                                <div class="options">
+                                    <div class="option">A. Run away as fast as possible</div>
+                                    <div class="option selected">B. Back away slowly without turning your back</div>
+                                    <div class="option">C. Try to pet it</div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
 
-            <!-- Coming Soon Section -->
+            <!-- Example Quiz Section -->
+            <section class="container">
+                <h2>Example Survival Quiz</h2>
+                <p>Here's a preview of what the survival quiz might look like in the app. Try answering these sample questions!</p>
+                
+                <div class="quiz-container">
+                    <div class="quiz-header">
+                        <h2>Wolf Encounter: Survival Quiz</h2>
+                        <p>Test your knowledge about how to safely respond when encountering wolves in the wild.</p>
+                    </div>
+                    <div class="quiz-content">
+                        <div class="question-card">
+                            <h3>Question 1 of 4</h3>
+                            <p>You're hiking in a forest and spot a wolf watching you from a distance. What should you do?</p>
+                            <div class="options">
+                                <div class="option">Run away immediately</div>
+                                <div class="option selected">Back away slowly while facing the wolf</div>
+                                <div class="option">Make yourself appear larger and make loud noises</div>
+                                <div class="option">Lie down and play dead</div>
+                            </div>
+                        </div>
+                        
+                        <div class="quiz-navigation">
+                            <button class="button" style="background-color: #666;">Previous</button>
+                            <button class="button">Next Question</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
             <div class="coming-soon">
-                <h3>More Features Coming Soon!</h3>
-                <p>We're continuously developing new features for the Survival Kingdom experience. Check back later for updates on our digital solution.</p>
+                <h3>Experience it for Real at the Museum!</h3>
+                <p>Visit Naturhistorisk Museum to try the full Survival Kingdom experience. The app is being continuously improved with new animals, challenges, and educational content.</p>
+                <a href="index.html" class="button">Back to Main Page</a>
             </div>
         </div>
     </section>
