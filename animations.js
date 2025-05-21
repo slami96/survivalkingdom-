@@ -35,7 +35,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
     
     // Animate sections when they come into view
-    const animatedSections = document.querySelectorAll('.step, .museum-section');
+    const animatedSections = document.querySelectorAll('.step, .museum-section, .opening-hours-box, .opening-hours-large');
     
     if (animatedSections.length > 0) {
         // Create IntersectionObserver to detect when sections come into view
@@ -109,6 +109,21 @@ document.addEventListener('DOMContentLoaded', function() {
         });
         
         image.addEventListener('mouseout', function() {
+            this.style.transform = '';
+            this.style.boxShadow = '';
+        });
+    });
+    
+    // Opening hours hover effects
+    const openingHoursBoxes = document.querySelectorAll('.opening-hours-box, .opening-hours-large');
+    
+    openingHoursBoxes.forEach(box => {
+        box.addEventListener('mouseover', function() {
+            this.style.transform = 'translateY(-5px)';
+            this.style.boxShadow = '0 12px 30px rgba(0, 0, 0, 0.2)';
+        });
+        
+        box.addEventListener('mouseout', function() {
             this.style.transform = '';
             this.style.boxShadow = '';
         });
