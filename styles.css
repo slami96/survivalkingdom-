@@ -18,6 +18,7 @@
   --beige-bg: #f8f4e8;
   --white: #fff;
   --transition: all 0.3s ease;
+  --blue-bg: #2d4374;
 }
 
 html {
@@ -160,8 +161,20 @@ header {
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(135deg, rgba(8, 36, 68, 0.05) 0%, rgba(255, 255, 255, 0) 100%);
+  background: linear-gradient(135deg, rgba(8, 36, 68, 0.3) 0%, rgba(0, 0, 0, 0.5) 100%);
   z-index: 0;
+}
+
+/* Fullscreen Hero with Background Image */
+.fullscreen-hero {
+  min-height: calc(100vh - 122px); /* Subtract header height */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 0;
 }
 
 .hero-content {
@@ -169,6 +182,11 @@ header {
   margin: 0 auto;
   position: relative;
   z-index: 1;
+  color: var(--white);
+  padding: 2rem;
+  border-radius: 8px;
+  background-color: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(5px);
 }
 
 /* Button Styles */
@@ -284,6 +302,48 @@ header {
 
 .section-link:hover {
   color: var(--hover-color);
+}
+
+/* Opening Hours Styles */
+.opening-hours-box, .opening-hours-large {
+  background-color: var(--blue-bg);
+  color: var(--white);
+  padding: 2rem;
+  border-radius: 8px;
+  margin: 2rem 0;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+}
+
+.opening-hours-large {
+  height: 100%;
+  min-height: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.opening-hours-box h3, .opening-hours-large h3 {
+  font-size: 1.75rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.hours-list {
+  list-style: none;
+}
+
+.hours-list li {
+  padding: 0.75rem 0;
+  font-size: 1.1rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.hours-list li:last-child {
+  border-bottom: none;
+}
+
+.hours-list strong {
+  margin-right: 0.5rem;
 }
 
 /* Digital Experience Promo */
@@ -472,6 +532,10 @@ footer {
     font-size: 6rem;
     top: -2rem;
     left: -1rem;
+  }
+  
+  .fullscreen-hero {
+    min-height: calc(100vh - 150px);
   }
 }
 
