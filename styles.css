@@ -277,15 +277,21 @@ header {
   text-align: center;
 }
 
-/* Feature Image Styling */
+/* Standard Feature Image Styling (for main page) */
 .feature-image {
+  max-width: 100%;
   height: auto;
-  border-radius: 0;
-  box-shadow: none;
+  border-radius: 8px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
   transition: var(--transition);
-  background-color: transparent !important;
 }
 
+.feature-image:hover {
+  transform: scale(1.03);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.15);
+}
+
+/* Special no-bg class for app page images */
 .no-bg {
   background-color: transparent !important;
   box-shadow: none !important;
@@ -310,8 +316,6 @@ header {
   display: flex;
   justify-content: center;
   gap: 20px;
-  background-color: transparent !important;
-  box-shadow: none !important;
 }
 
 .app-screenshots .feature-image {
@@ -373,13 +377,6 @@ header {
   flex: 1;
   text-align: center;
   padding: 1rem;
-  background-color: transparent !important;
-}
-
-.step-image img {
-  background-color: transparent !important;
-  box-shadow: none !important;
-  border-radius: 0 !important;
 }
 
 .step-number {
