@@ -34,27 +34,42 @@ document.addEventListener('DOMContentLoaded', function() {
         button.addEventListener('touchend', createRipple, { passive: true });
     });
     
-    // Animate step sections when they come into view
-    const steps = document.querySelectorAll('.step');
+    // Animate sections when they come into view
+    const animatedSections = document.querySelectorAll('.step, .museum-section');
     
-    if (steps.length > 0) {
-        // Create IntersectionObserver to detect when steps come into view
-        const stepObserver = new IntersectionObserver((entries) => {
+    if (animatedSections.length > 0) {
+        // Create IntersectionObserver to detect when sections come into view
+        const sectionObserver = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
                     entry.target.classList.add('fade-in');
-                    stepObserver.unobserve(entry.target);
+                    sectionObserver.unobserve(entry.target);
                 }
             });
         }, {
             threshold: 0.2
         });
         
-        // Observe each step
-        steps.forEach(step => {
-            stepObserver.observe(step);
+        // Observe each animated section
+        animatedSections.forEach(section => {
+            sectionObserver.observe(section);
         });
     }
+    
+    // Animate section links
+    const sectionLinks = document.querySelectorAll('.section-link');
+    
+    sectionLinks.forEach(link => {
+        link.addEventListener('mouseover', function() {
+            this.style.paddingLeft = '4px';
+            this.style.paddingRight = '4px';
+        });
+        
+        link.addEventListener('mouseout', function() {
+            this.style.paddingLeft = '';
+            this.style.paddingRight = '';
+        });
+    });
     
     // Animate hero section elements
     const heroContent = document.querySelector('.hero-content');
@@ -83,6 +98,21 @@ document.addEventListener('DOMContentLoaded', function() {
             this.style.transform = 'scale(1)';
         });
     }
+    
+    // Feature image hover effects
+    const featureImages = document.querySelectorAll('.feature-image');
+    
+    featureImages.forEach(image => {
+        image.addEventListener('mouseover', function() {
+            this.style.transform = 'scale(1.03)';
+            this.style.boxShadow = '0 12px 32px rgba(0, 0, 0, 0.15)';
+        });
+        
+        image.addEventListener('mouseout', function() {
+            this.style.transform = '';
+            this.style.boxShadow = '';
+        });
+    });
 });
 
 // Function to create ripple effect on buttons
