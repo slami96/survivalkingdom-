@@ -156,6 +156,17 @@ header {
   overflow: hidden;
 }
 
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, rgba(8, 36, 68, 0.3) 0%, rgba(0, 0, 0, 0.5) 100%);
+  z-index: 0;
+}
+
 /* Fullscreen Hero with Background Image */
 .fullscreen-hero {
   min-height: calc(100vh - 100px); /* Adjusted for thinner header */
@@ -168,14 +179,23 @@ header {
   padding: 0;
 }
 
+/* Hero content positioned 20% lower */
+.hero-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding-top: 20vh; /* Push content 20% lower */
+}
+
 .hero-content {
   max-width: 500px; /* Made narrower as requested */
-  margin: 0 auto;
   position: relative;
   z-index: 1;
   color: var(--white);
   padding: 2rem;
-  /* Removed the blurry background container */
+  border-radius: 8px;
+  background-color: rgba(0, 0, 0, 0.6); /* Added back blurry container */
+  backdrop-filter: blur(5px);
 }
 
 /* Button Styles - All buttons now match */
@@ -460,6 +480,10 @@ footer {
   
   .fullscreen-hero {
     min-height: calc(100vh - 120px);
+  }
+  
+  .hero-wrapper {
+    padding-top: 15vh; /* Slightly less padding on mobile */
   }
 }
 
