@@ -280,15 +280,16 @@ header {
 .feature-image {
   max-width: 100%;
   height: auto;
-  border-radius: 8px;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  border-radius: 0;
+  box-shadow: none;
   transition: var(--transition);
-  object-fit: contain;
+  background-color: transparent !important;
 }
 
-.feature-image:hover {
-  transform: scale(1.03);
-  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.15);
+.no-bg {
+  background-color: transparent !important;
+  box-shadow: none !important;
+  border-radius: 0 !important;
 }
 
 /* App Screenshots Display */
@@ -296,18 +297,17 @@ header {
   display: flex;
   justify-content: center;
   gap: 20px;
-  background-color: transparent;
+  background-color: transparent !important;
+  box-shadow: none !important;
 }
 
 .app-screenshots .feature-image {
   max-width: calc(50% - 10px);
-  background-color: transparent;
 }
 
 /* Single Image Display */
 .single-image {
   max-width: 65%;
-  background-color: transparent;
 }
 
 /* Digital Experience Promo */
@@ -365,17 +365,15 @@ header {
   flex: 1;
   text-align: center;
   padding: 1rem;
-  background-color: transparent;
+  background-color: transparent !important;
 }
 
 .step-image img {
-  background-color: transparent;
-  border-radius: 8px;
-  transition: var(--transition);
-}
-
-.step-image img:hover {
-  transform: scale(1.03);
+  max-width: 100%;
+  height: auto;
+  background-color: transparent !important;
+  box-shadow: none !important;
+  border-radius: 0 !important;
 }
 
 .step-number {
@@ -387,14 +385,6 @@ header {
   top: -3rem;
   left: -2rem;
   z-index: 0;
-}
-
-.coming-soon {
-  text-align: center;
-  margin-top: 4rem;
-  padding: 2rem;
-  background-color: var(--light-bg);
-  border-radius: 8px;
 }
 
 /* Footer Styles */
