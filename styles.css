@@ -194,7 +194,7 @@ header {
   color: var(--white);
   padding: 2rem;
   border-radius: 8px;
-  background-color: rgba(0, 0, 0, 0.6); /* Added back blurry container */
+  background-color: rgba(0, 0, 0, 0.4); /* Lighter background as requested */
   backdrop-filter: blur(5px);
 }
 
