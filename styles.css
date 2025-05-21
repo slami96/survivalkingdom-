@@ -85,11 +85,11 @@ p {
   padding: 1rem;
 }
 
-/* Header Styles */
+/* Header Styles - 30% thinner */
 header {
   background-color: var(--white);
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-  padding: 1rem 0;
+  padding: 0.7rem 0; /* Reduced padding by 30% */
   position: sticky;
   top: 0;
   z-index: 100;
@@ -102,7 +102,7 @@ header {
 }
 
 .logo {
-  height: 100px; /* Doubled the size from 50px to 100px */
+  height: 70px; /* Reduced from 100px to make header thinner */
   transition: var(--transition);
 }
 
@@ -167,7 +167,7 @@ header {
 
 /* Fullscreen Hero with Background Image */
 .fullscreen-hero {
-  min-height: calc(100vh - 122px); /* Subtract header height */
+  min-height: calc(100vh - 100px); /* Adjusted for thinner header */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -178,7 +178,7 @@ header {
 }
 
 .hero-content {
-  max-width: 800px;
+  max-width: 500px; /* Made narrower as requested */
   margin: 0 auto;
   position: relative;
   z-index: 1;
@@ -189,7 +189,7 @@ header {
   backdrop-filter: blur(5px);
 }
 
-/* Button Styles */
+/* Button Styles - All buttons now match */
 .button {
   display: inline-block;
   background-color: var(--primary-color);
@@ -235,6 +235,12 @@ header {
   box-shadow: 0 2px 6px rgba(8, 36, 68, 0.3);
 }
 
+/* Button Centering */
+.button-center {
+  text-align: center;
+  margin: 1rem 0;
+}
+
 /* Museum Sections */
 .museum-section {
   display: flex;
@@ -275,46 +281,14 @@ header {
   box-shadow: 0 12px 32px rgba(0, 0, 0, 0.15);
 }
 
-.section-link {
-  display: inline-block;
-  color: var(--primary-color);
-  font-weight: 600;
-  text-decoration: none;
-  margin-top: 1rem;
-  position: relative;
-  padding-bottom: 2px;
-}
-
-.section-link::after {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 0;
-  height: 2px;
-  background-color: var(--primary-color);
-  transition: width 0.3s ease;
-}
-
-.section-link:hover::after {
-  width: 100%;
-}
-
-.section-link:hover {
-  color: var(--hover-color);
-}
-
 /* Opening Hours Styles */
-.opening-hours-box, .opening-hours-large {
+.opening-hours-large {
   background-color: var(--blue-bg);
   color: var(--white);
   padding: 2rem;
   border-radius: 8px;
   margin: 2rem 0;
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
-}
-
-.opening-hours-large {
   height: 100%;
   min-height: 350px;
   display: flex;
@@ -322,7 +296,7 @@ header {
   justify-content: center;
 }
 
-.opening-hours-box h3, .opening-hours-large h3 {
+.opening-hours-large h3 {
   font-size: 1.75rem;
   margin-bottom: 1.5rem;
   text-align: center;
@@ -503,7 +477,7 @@ footer {
   }
   
   .logo {
-    height: 80px; /* Slightly smaller on mobile but still bigger than original */
+    height: 60px; /* Slightly smaller on mobile */
   }
   
   .nav-buttons {
@@ -535,7 +509,7 @@ footer {
   }
   
   .fullscreen-hero {
-    min-height: calc(100vh - 150px);
+    min-height: calc(100vh - 120px);
   }
 }
 
