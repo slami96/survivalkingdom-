@@ -35,7 +35,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
     
     // Animate sections when they come into view
-    const animatedSections = document.querySelectorAll('.step, .museum-section, .opening-hours-box, .opening-hours-large');
+    const animatedSections = document.querySelectorAll('.step, .museum-section, .opening-hours-large');
     
     if (animatedSections.length > 0) {
         // Create IntersectionObserver to detect when sections come into view
@@ -55,21 +55,6 @@ document.addEventListener('DOMContentLoaded', function() {
             sectionObserver.observe(section);
         });
     }
-    
-    // Animate section links
-    const sectionLinks = document.querySelectorAll('.section-link');
-    
-    sectionLinks.forEach(link => {
-        link.addEventListener('mouseover', function() {
-            this.style.paddingLeft = '4px';
-            this.style.paddingRight = '4px';
-        });
-        
-        link.addEventListener('mouseout', function() {
-            this.style.paddingLeft = '';
-            this.style.paddingRight = '';
-        });
-    });
     
     // Animate hero section elements
     const heroContent = document.querySelector('.hero-content');
@@ -115,7 +100,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
     
     // Opening hours hover effects
-    const openingHoursBoxes = document.querySelectorAll('.opening-hours-box, .opening-hours-large');
+    const openingHoursBoxes = document.querySelectorAll('.opening-hours-large');
     
     openingHoursBoxes.forEach(box => {
         box.addEventListener('mouseover', function() {
