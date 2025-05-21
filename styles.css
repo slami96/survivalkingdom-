@@ -277,8 +277,8 @@ header {
   text-align: center;
 }
 
+/* Feature Image Styling */
 .feature-image {
-  max-width: 100%;
   height: auto;
   border-radius: 0;
   box-shadow: none;
@@ -292,6 +292,19 @@ header {
   border-radius: 0 !important;
 }
 
+/* Container to control single image width */
+.image-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.image-container img {
+  width: auto;
+  max-width: 50%;
+  height: auto;
+}
+
 /* App Screenshots Display */
 .app-screenshots {
   display: flex;
@@ -303,11 +316,6 @@ header {
 
 .app-screenshots .feature-image {
   max-width: calc(50% - 10px);
-}
-
-/* Single Image Display */
-.single-image {
-  max-width: 65%;
 }
 
 /* Digital Experience Promo */
@@ -369,8 +377,6 @@ header {
 }
 
 .step-image img {
-  max-width: 100%;
-  height: auto;
   background-color: transparent !important;
   box-shadow: none !important;
   border-radius: 0 !important;
@@ -505,7 +511,7 @@ footer {
     margin-bottom: 15px;
   }
   
-  .single-image {
+  .image-container img {
     max-width: 80%;
   }
 }
