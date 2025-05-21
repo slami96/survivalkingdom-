@@ -3,7 +3,7 @@
 // Wait for the DOM to be fully loaded
 document.addEventListener('DOMContentLoaded', function() {
     // Button hover effects
-    const buttons = document.querySelectorAll('.button, .nav-button');
+    const buttons = document.querySelectorAll('.button');
     
     buttons.forEach(button => {
         // Add touch and click effects
@@ -34,8 +34,25 @@ document.addEventListener('DOMContentLoaded', function() {
         button.addEventListener('touchend', createRipple, { passive: true });
     });
     
+    // Add hover effect for nav buttons
+    const navButtons = document.querySelectorAll('.nav-button');
+    
+    navButtons.forEach(button => {
+        button.addEventListener('mouseover', function() {
+            if (!this.classList.contains('active')) {
+                this.style.color = '#3b5998';
+            }
+        });
+        
+        button.addEventListener('mouseout', function() {
+            if (!this.classList.contains('active')) {
+                this.style.color = '';
+            }
+        });
+    });
+    
     // Animate sections when they come into view
-    const animatedSections = document.querySelectorAll('.step, .museum-section, .opening-hours-large');
+    const animatedSections = document.querySelectorAll('.step, .museum-section');
     
     if (animatedSections.length > 0) {
         // Create IntersectionObserver to detect when sections come into view
@@ -94,21 +111,6 @@ document.addEventListener('DOMContentLoaded', function() {
         });
         
         image.addEventListener('mouseout', function() {
-            this.style.transform = '';
-            this.style.boxShadow = '';
-        });
-    });
-    
-    // Opening hours hover effects
-    const openingHoursBoxes = document.querySelectorAll('.opening-hours-large');
-    
-    openingHoursBoxes.forEach(box => {
-        box.addEventListener('mouseover', function() {
-            this.style.transform = 'translateY(-5px)';
-            this.style.boxShadow = '0 12px 30px rgba(0, 0, 0, 0.2)';
-        });
-        
-        box.addEventListener('mouseout', function() {
             this.style.transform = '';
             this.style.boxShadow = '';
         });
@@ -179,7 +181,7 @@ document.head.insertAdjacentHTML('beforeend', `
             }
         }
         
-        .button, .nav-button {
+        .button {
             position: relative;
             overflow: hidden;
         }
