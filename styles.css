@@ -15,6 +15,7 @@
   --hover-color: #0f3a6e;
   --text-color: #333;
   --light-bg: #f5f5f5;
+  --beige-bg: #f8f4e8;
   --white: #fff;
   --transition: all 0.3s ease;
 }
@@ -87,7 +88,7 @@ p {
 header {
   background-color: var(--white);
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-  padding: 0.5rem 0;
+  padding: 1rem 0;
   position: sticky;
   top: 0;
   z-index: 100;
@@ -99,12 +100,8 @@ header {
   align-items: center;
 }
 
-.logo-container {
-  margin-left: -20px;
-}
-
 .logo {
-  height: 100px;
+  height: 100px; /* Doubled the size from 50px to 100px */
   transition: var(--transition);
 }
 
@@ -220,6 +217,94 @@ header {
   box-shadow: 0 2px 6px rgba(8, 36, 68, 0.3);
 }
 
+/* Museum Sections */
+.museum-section {
+  display: flex;
+  align-items: center;
+  padding: 5rem 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.museum-section:nth-child(odd) {
+  background-color: var(--beige-bg);
+}
+
+.museum-section.reverse {
+  flex-direction: row-reverse;
+}
+
+.section-content {
+  flex: 1;
+  padding: 2rem;
+}
+
+.section-image {
+  flex: 1;
+  padding: 2rem;
+  text-align: center;
+}
+
+.feature-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  transition: var(--transition);
+}
+
+.feature-image:hover {
+  transform: scale(1.03);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.15);
+}
+
+.section-link {
+  display: inline-block;
+  color: var(--primary-color);
+  font-weight: 600;
+  text-decoration: none;
+  margin-top: 1rem;
+  position: relative;
+  padding-bottom: 2px;
+}
+
+.section-link::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: var(--primary-color);
+  transition: width 0.3s ease;
+}
+
+.section-link:hover::after {
+  width: 100%;
+}
+
+.section-link:hover {
+  color: var(--hover-color);
+}
+
+/* Digital Experience Promo */
+.digital-promo {
+  text-align: center;
+  padding: 4rem 0;
+  background-color: var(--light-bg);
+  margin: 4rem 0 2rem;
+  border-radius: 12px;
+}
+
+.digital-promo h2 {
+  margin: 0 auto 1rem;
+}
+
+.digital-promo p {
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 /* Step by Step Section */
 .steps-container {
   padding: 4rem 0;
@@ -270,11 +355,30 @@ header {
   transform: scale(1.03);
 }
 
+.step-number {
+  font-size: 8rem;
+  font-weight: 700;
+  color: var(--primary-color);
+  opacity: 0.08;
+  position: absolute;
+  top: -3rem;
+  left: -2rem;
+  z-index: 0;
+}
+
+.coming-soon {
+  text-align: center;
+  margin-top: 4rem;
+  padding: 2rem;
+  background-color: var(--light-bg);
+  border-radius: 8px;
+}
+
 /* Footer Styles */
 footer {
   background-color: var(--primary-color);
   color: var(--white);
-  padding: 1.5rem 0;
+  padding: 3rem 0;
   margin-top: 3rem;
 }
 
@@ -288,7 +392,7 @@ footer {
 .social-icons {
   display: flex;
   gap: 1.5rem;
-  margin: 1rem 0;
+  margin: 1.5rem 0;
 }
 
 .social-icon {
@@ -347,12 +451,27 @@ footer {
     justify-content: center;
   }
   
-  .step, .step:nth-child(even) {
+  .museum-section, 
+  .museum-section.reverse,
+  .step, 
+  .step:nth-child(even) {
     flex-direction: column;
   }
   
+  .section-image,
   .step-image {
     margin-top: 2rem;
+    padding: 0;
+  }
+  
+  .section-content {
+    padding: 1rem 0;
+  }
+  
+  .step-number {
+    font-size: 6rem;
+    top: -2rem;
+    left: -1rem;
   }
 }
 
