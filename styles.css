@@ -283,6 +283,7 @@ header {
   border-radius: 8px;
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
   transition: var(--transition);
+  object-fit: contain;
 }
 
 .feature-image:hover {
@@ -295,10 +296,18 @@ header {
   display: flex;
   justify-content: center;
   gap: 20px;
+  background-color: transparent;
 }
 
 .app-screenshots .feature-image {
   max-width: calc(50% - 10px);
+  background-color: transparent;
+}
+
+/* Single Image Display */
+.single-image {
+  max-width: 65%;
+  background-color: transparent;
 }
 
 /* Digital Experience Promo */
@@ -356,13 +365,12 @@ header {
   flex: 1;
   text-align: center;
   padding: 1rem;
+  background-color: transparent;
 }
 
 .step-image img {
-  max-width: 100%;
-  height: auto;
+  background-color: transparent;
   border-radius: 8px;
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
   transition: var(--transition);
 }
 
@@ -505,6 +513,10 @@ footer {
   .app-screenshots .feature-image {
     max-width: 80%;
     margin-bottom: 15px;
+  }
+  
+  .single-image {
+    max-width: 80%;
   }
 }
 
