@@ -1,124 +1,188 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="da">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Naturhistorisk Museum - Aarhus University</title>
+    <meta name="description" content="Naturhistorisk Museum - Aarhus Universitet. Oplev naturens vidundere gennem vores udstillinger og digitale oplevelser.">
+    <title>Naturhistorisk Museum - Aarhus Universitet</title>
+    
+    <!-- AU Passata Font Import -->
+    <link rel="stylesheet" href="https://use.typekit.net/wkr4xyk.css">
+    
+    <!-- Main Stylesheet -->
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <!-- Header -->
-    <header>
-        <div class="container header-container">
-            <div class="logo-container">
-                <a href="index.html">
-                    <img src="logo.png" alt="Naturhistorisk Museum Logo" class="logo">
-                </a>
+    <header class="au-header">
+        <div class="au-container">
+            <div class="au-header-inner">
+                <div class="au-logo">
+                    <img src="https://medarbejdere.au.dk/fileadmin/www.au.dk/opdigitalt/05Logoer/Logo_blue/logo_au_da_blue.svg" alt="Aarhus Universitet">
+                    <div class="au-logo-text">Naturhistorisk Museum</div>
+                </div>
+                <nav class="au-nav">
+                    <a href="index.html" class="au-nav-link active" data-translate="nav.home">Forside</a>
+                    <a href="explore.html" class="au-nav-link" data-translate="nav.survival">Survival Kingdom</a>
+                    <a href="#" class="au-nav-link" data-translate="nav.about">Om os</a>
+                    <a href="#" class="au-nav-link" data-translate="nav.contact">Kontakt</a>
+                    <div class="au-lang-switch">
+                        <button class="au-lang-btn" data-lang="da">DA</button>
+                        <button class="au-lang-btn" data-lang="en">EN</button>
+                    </div>
+                </nav>
             </div>
-            <nav class="nav-buttons">
-                <a href="index.html" class="nav-button active">Main Page</a>
-                <a href="explore.html" class="nav-button">Survival Kingdom App</a>
-            </nav>
         </div>
     </header>
-
-    <!-- Full-screen Hero Section with cover.png background -->
-    <section class="hero fullscreen-hero" style="background-image: url('cover.png');">
-        <div class="hero-wrapper">
-            <div class="hero-content">
-                <h1>Welcome to <strong>Naturhistorisk Museum</strong></h1>
-                <p>Discover the wonders of natural history at Aarhus University's Natural History Museum. Explore our exhibitions and experience the fascinating world of animals and nature.</p>
-                <a href="#museum-sections" class="button">Explore Museum</a>
+    
+    <!-- Hero Section -->
+    <section class="au-hero">
+        <img src="cover.png" alt="Museum baggrund" class="au-hero-bg">
+        <div class="au-container">
+            <div class="au-hero-content fade-in">
+                <h1 data-translate="home.hero.title">Velkommen til <strong>Naturhistorisk Museum</strong></h1>
+                <p data-translate="home.hero.subtitle">Oplev naturens vidundere på Aarhus Universitets naturhistoriske museum. Udforsk vores udstillinger og lær om den fascinerende verden af dyr og natur.</p>
+                <a href="#udstillinger" class="au-btn au-btn-primary" data-translate="home.hero.cta">Udforsk museet</a>
             </div>
         </div>
     </section>
-
-    <!-- Museum Sections -->
-    <main id="museum-sections">
-        <div class="container">
-            <!-- Plan your visit section -->
-            <section class="museum-section" id="plan-visit">
-                <div class="section-content">
-                    <h2>Plan your visit</h2>
-                    <p>We have been working hard on new, interesting exhibitions, and we look forward to your visit.</p>
-                    <p>Our museum offers a unique opportunity to explore natural history through interactive exhibits and fascinating displays.</p>
-                    <div class="button-center">
-                        <a href="#" class="button">Opening Hours & Tickets</a>
-                    </div>
-                </div>
-                <div class="section-image">
-                    <img src="visit.png" alt="Plan your visit" class="feature-image">
-                </div>
-            </section>
-
-            <!-- Exhibitions section -->
-            <section class="museum-section reverse" id="exhibitions">
-                <div class="section-content">
-                    <h2>Exhibitions</h2>
-                    <p>Get up close and personal with animals of the world. Visit our exhibitions with more than 2000 preserved animals and make sure to see our special exhibition as well.</p>
-                    <p>Our collections span from prehistoric fossils to modern species, offering insights into the diversity and evolution of life on Earth.</p>
-                    <div class="button-center">
-                        <a href="#" class="button">Current Exhibitions</a>
-                    </div>
-                </div>
-                <div class="section-image">
-                    <img src="exhibitions.png" alt="Exhibition display" class="feature-image">
-                </div>
-            </section>
-
-            <!-- Kid-friendly Museum section -->
-            <section class="museum-section" id="kid-friendly">
-                <div class="section-content">
-                    <h2>Kid-friendly Museum</h2>
-                    <p>Natural History Museum is for all ages, but children especially. Find out why.</p>
-                    <p>We offer interactive exhibits designed specifically for young explorers, with hands-on activities that make learning about nature fun and engaging.</p>
-                    <div class="button-center">
-                        <a href="#" class="button">Activities for Children</a>
-                    </div>
-                </div>
-                <div class="section-image">
-                    <img src="kids.png" alt="Children at museum" class="feature-image">
-                </div>
-            </section>
-
-            <!-- The Mols Laboratory section -->
-            <section class="museum-section reverse" id="mols-laboratory">
-                <div class="section-content">
-                    <h2>The Mols Laboratory Research Station</h2>
-                    <p>The Mols Laboratory is the museum's research station in Mols Bjerge, approx. 40 minutes drive from Aarhus. The scenic landscape and marked trails are perfect for a day trip.</p>
-                    <p>This unique facility allows visitors to see scientific research in action and explore the beautiful natural surroundings.</p>
-                    <div class="button-center">
-                        <a href="#" class="button">Visit Mols Laboratory</a>
-                    </div>
-                </div>
-                <div class="section-image">
-                    <img src="lab.png" alt="Mols Laboratory" class="feature-image">
-                </div>
-            </section>
-
-            <!-- Digital Experience Promo -->
-            <section class="digital-promo">
-                <h2>Enhance Your Visit with Our Digital Experience</h2>
-                <p>Try our new Survival Kingdom app to test your knowledge about animals and their survival tactics.</p>
-                <a href="explore.html" class="button">Discover Survival Kingdom</a>
-            </section>
-        </div>
-    </main>
-
-    <!-- Footer -->
-    <footer>
-        <div class="container footer-content">
-            <div class="social-icons">
-                <a href="https://facebook.com" class="social-icon icon-facebook" target="_blank" rel="noopener noreferrer">
-                </a>
-                <a href="https://instagram.com" class="social-icon icon-instagram" target="_blank" rel="noopener noreferrer">
-                </a>
+    
+    <!-- Introduction Section -->
+    <section class="au-section">
+        <div class="au-container">
+            <div class="au-section-header">
+                <h2 data-translate="home.intro.title">Et vindue til naturens mangfoldighed</h2>
+                <p data-translate="home.intro.subtitle">Med over 150 års historie og mere end 5 millioner genstande er vi et af Danmarks førende naturhistoriske museer</p>
             </div>
-            <p>© 2025 Aarhus University Naturhistorisk Museum. All rights reserved.</p>
         </div>
-    </footer>
-
-    <!-- JavaScript -->
-    <script src="animations.js"></script>
-</body>
-</html>
+    </section>
+    
+    <!-- Features Section -->
+    <section class="au-section au-section-alt" id="udstillinger">
+        <div class="au-container">
+            <!-- Plan your visit -->
+            <div class="au-feature">
+                <div class="au-feature-content">
+                    <h2 data-translate="home.visit.title">Planlæg dit besøg</h2>
+                    <p data-translate="home.visit.text1">Vi har arbejdet hårdt på nye, interessante udstillinger, og vi glæder os til dit besøg.</p>
+                    <p data-translate="home.visit.text2">Vores museum tilbyder en unik mulighed for at udforske naturhistorie gennem interaktive udstillinger og fascinerende displays.</p>
+                    <a href="#" class="au-btn au-btn-secondary" data-translate="home.visit.cta">Åbningstider & billetter</a>
+                </div>
+                <div class="au-feature-image">
+                    <img src="visit.png" alt="Planlæg dit besøg">
+                </div>
+            </div>
+            
+            <!-- Exhibitions -->
+            <div class="au-feature">
+                <div class="au-feature-content">
+                    <h2 data-translate="home.exhibitions.title">Udstillinger</h2>
+                    <p data-translate="home.exhibitions.text1">Kom tæt på verdens dyr. Besøg vores udstillinger med mere end 2000 præparerede dyr og sørg for at se vores særudstilling også.</p>
+                    <p data-translate="home.exhibitions.text2">Vores samlinger spænder fra forhistoriske fossiler til moderne arter og giver indsigt i livets mangfoldighed og evolution på Jorden.</p>
+                    <a href="#" class="au-btn au-btn-secondary" data-translate="home.exhibitions.cta">Aktuelle udstillinger</a>
+                </div>
+                <div class="au-feature-image">
+                    <img src="exhibitions.png" alt="Udstillingsdisplay">
+                </div>
+            </div>
+            
+            <!-- Kid-friendly Museum -->
+            <div class="au-feature">
+                <div class="au-feature-content">
+                    <h2 data-translate="home.kids.title">Børnevenligt museum</h2>
+                    <p data-translate="home.kids.text1">Naturhistorisk Museum er for alle aldre, men især børn. Find ud af hvorfor.</p>
+                    <p data-translate="home.kids.text2">Vi tilbyder interaktive udstillinger designet specielt til unge opdagelsesrejsende med praktiske aktiviteter, der gør læring om naturen sjov og engagerende.</p>
+                    <a href="#" class="au-btn au-btn-secondary" data-translate="home.kids.cta">Aktiviteter for børn</a>
+                </div>
+                <div class="au-feature-image">
+                    <img src="kids.png" alt="Børn på museet">
+                </div>
+            </div>
+            
+            <!-- Mols Laboratory -->
+            <div class="au-feature">
+                <div class="au-feature-content">
+                    <h2 data-translate="home.mols.title">Molslaboratoriet forskningsstation</h2>
+                    <p data-translate="home.mols.text1">Molslaboratoriet er museets forskningsstation i Mols Bjerge, ca. 40 minutters kørsel fra Aarhus. Det naturskønne landskab og de afmærkede stier er perfekte til en dagstur.</p>
+                    <p data-translate="home.mols.text2">Dette unikke anlæg giver besøgende mulighed for at se videnskabelig forskning i aktion og udforske de smukke naturomgivelser.</p>
+                    <a href="#" class="au-btn au-btn-secondary" data-translate="home.mols.cta">Besøg Molslaboratoriet</a>
+                </div>
+                <div class="au-feature-image">
+                    <img src="lab.png" alt="Molslaboratoriet">
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Digital Experience CTA -->
+    <section class="au-section">
+        <div class="au-container">
+            <div class="au-cta au-cta--teal">
+                <h2 data-translate="home.digital.title">Forbedre dit besøg med vores digitale oplevelse</h2>
+                <p data-translate="home.digital.text">Prøv vores nye Survival Kingdom app for at teste din viden om dyr og deres overlevelsestaktikker.</p>
+                <a href="explore.html" class="au-btn au-btn-primary" data-translate="home.digital.cta">Oplev Survival Kingdom</a>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Events Section -->
+    <section class="au-section">
+        <div class="au-container">
+            <div class="au-section-header">
+                <h2 data-translate="home.events.title">Kommende arrangementer</h2>
+                <p data-translate="home.events.subtitle">Deltag i vores spændende arrangementer og bliv klogere på naturen</p>
+            </div>
+            <div class="au-grid au-grid-3">
+                <!-- Event 1 -->
+                <div class="au-card">
+                    <img src="https://via.placeholder.com/400x250/003d73/ffffff?text=Foredrag" alt="Foredrag" class="au-card-image">
+                    <div class="au-card-content">
+                        <h3 data-translate="home.event1.title">Klimaforandringer og biodiversitet</h3>
+                        <p data-translate="home.event1.text">Hør om hvordan klimaforandringer påvirker verdens dyreliv og hvad vi kan gøre for at beskytte biodiversiteten.</p>
+                        <a href="#" class="au-btn au-btn-secondary" data-translate="home.event1.cta">Læs mere</a>
+                    </div>
+                </div>
+                <!-- Event 2 -->
+                <div class="au-card">
+                    <img src="https://via.placeholder.com/400x250/00a19a/ffffff?text=Workshop" alt="Workshop" class="au-card-image">
+                    <div class="au-card-content">
+                        <h3 data-translate="home.event2.title">Fossil workshop for børn</h3>
+                        <p data-translate="home.event2.text">Lær om fossiler og paleontologi gennem sjove aktiviteter. Perfekt for børn mellem 7-12 år.</p>
+                        <a href="#" class="au-btn au-btn-secondary" data-translate="home.event2.cta">Tilmeld</a>
+                    </div>
+                </div>
+                <!-- Event 3 -->
+                <div class="au-card">
+                    <img src="https://via.placeholder.com/400x250/655a9f/ffffff?text=Særudstilling" alt="Særudstilling" class="au-card-image">
+                    <div class="au-card-content">
+                        <h3 data-translate="home.event3.title">Havets hemmeligheder</h3>
+                        <p data-translate="home.event3.text">Dyk ned i havets dybder og oplev de fantastiske skabninger der lever i vores oceaner.</p>
+                        <a href="#" class="au-btn au-btn-secondary" data-translate="home.event3.cta">Se udstilling</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer class="au-footer">
+        <div class="au-container">
+            <div class="au-footer-content">
+                <div class="au-footer-logo">
+                    <img src="https://medarbejdere.au.dk/fileadmin/www.au.dk/opdigitalt/05Logoer/Logo_blue/logo_au_da_blue.svg" alt="Aarhus Universitet">
+                    <span>Naturhistorisk Museum</span>
+                </div>
+                <div class="au-social-links">
+                    <a href="#" class="au-social-link" aria-label="Facebook">
+                        <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                        </svg>
+                    </a>
+                    <a href="#" class="au-social-link" aria-label="Instagram">
+                        <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zM5.838 12a6.162 6.162 0 1112.324 0 6.162 6.162 0 01-12.324 0zM12 16a4 4 0 110-8 4 4 0 010 8zm4.965-10.405a1.44 1.44 0 112.881.001 1.44 1.44 0 01-2.881-.001z"/>
+                        </svg>
+                    </a>
+                    <a href="#" class="au-social-link" aria-label="LinkedIn">
+                        <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
