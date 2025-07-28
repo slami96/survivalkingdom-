@@ -193,8 +193,8 @@ const translations = {
     }
 };
 
-// Language state
-let currentLanguage = 'da'; // Default language
+// Language state - DEFAULT TO ENGLISH
+let currentLanguage = 'en'; // Changed from 'da' to 'en'
 
 // Initialize language from localStorage or browser preference
 function initializeLanguage() {
@@ -202,11 +202,8 @@ function initializeLanguage() {
     if (savedLanguage && (savedLanguage === 'en' || savedLanguage === 'da')) {
         currentLanguage = savedLanguage;
     } else {
-        // Check browser language
-        const browserLang = navigator.language.toLowerCase();
-        if (browserLang.startsWith('en')) {
-            currentLanguage = 'en';
-        }
+        // Default to English
+        currentLanguage = 'en';
     }
     updateLanguage();
 }
