@@ -322,11 +322,6 @@ a:hover {
     opacity: 0.95;
 }
 
-/* Survival Kingdom Hero - Teal */
-.au-hero--teal {
-    background-color: var(--au-teal);
-}
-
 /* ================================================
    Buttons
    ================================================ */
@@ -372,7 +367,7 @@ a:hover {
    ================================================ */
 .au-card {
     background-color: var(--au-white);
-    border-radius: var(--radius-md);
+    border-radius: 0; /* No rounded corners */
     overflow: hidden;
     box-shadow: var(--shadow-sm);
     transition: var(--transition-smooth);
@@ -460,7 +455,7 @@ a:hover {
 .au-feature-image img {
     width: 100%;
     height: auto;
-    border-radius: var(--radius-md);
+    border-radius: 0; /* No rounded corners */
     box-shadow: var(--shadow-md);
 }
 
@@ -484,7 +479,7 @@ a:hover {
 }
 
 /* ================================================
-   Process Steps (Survival Kingdom)
+   Process Steps (Safari Quiz)
    ================================================ */
 .au-steps {
     padding: var(--spacing-xxl) 0;
@@ -545,7 +540,7 @@ a:hover {
     height: auto;
     filter: drop-shadow(var(--shadow-lg));
     transition: var(--transition-smooth);
-    border-radius: var(--radius-md); /* Added rounded corners */
+    border-radius: 0; /* No rounded corners */
 }
 
 .au-step-images img:hover {
@@ -585,12 +580,12 @@ a:hover {
    CTA Section
    ================================================ */
 .au-cta {
-    background-color: var(--au-purple);
+    background-color: var(--au-blue); /* Always blue */
     color: var(--au-white);
     text-align: center;
     padding: var(--spacing-xxl);
     margin: var(--spacing-xxl) 0;
-    border-radius: var(--radius-lg);
+    border-radius: 0; /* No rounded corners */
     box-shadow: var(--shadow-lg);
 }
 
@@ -604,11 +599,6 @@ a:hover {
     font-size: var(--font-size-xl);
     margin: var(--spacing-md) auto var(--spacing-lg);
     max-width: 600px;
-}
-
-/* Digital Experience CTA on homepage */
-.au-cta--teal {
-    background-color: var(--au-teal);
 }
 
 /* ================================================
@@ -649,7 +639,7 @@ a:hover {
     width: 40px;
     height: 40px;
     border-radius: var(--radius-full);
-    background-color: rgba(255, 255, 255, 0.3); /* Changed from 0.1 to 0.3 for better visibility */
+    background-color: rgba(255, 255, 255, 0.3);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -657,7 +647,7 @@ a:hover {
 }
 
 .au-social-link:hover {
-    background-color: rgba(255, 255, 255, 0.5); /* Changed from 0.2 to 0.5 */
+    background-color: rgba(255, 255, 255, 0.5);
     transform: translateY(-2px);
 }
 
