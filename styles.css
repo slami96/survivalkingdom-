@@ -545,6 +545,7 @@ a:hover {
     height: auto;
     filter: drop-shadow(var(--shadow-lg));
     transition: var(--transition-smooth);
+    border-radius: var(--radius-md); /* Added rounded corners */
 }
 
 .au-step-images img:hover {
@@ -648,7 +649,7 @@ a:hover {
     width: 40px;
     height: 40px;
     border-radius: var(--radius-full);
-    background-color: rgba(255, 255, 255, 0.1);
+    background-color: rgba(255, 255, 255, 0.3); /* Changed from 0.1 to 0.3 for better visibility */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -656,8 +657,18 @@ a:hover {
 }
 
 .au-social-link:hover {
-    background-color: rgba(255, 255, 255, 0.2);
+    background-color: rgba(255, 255, 255, 0.5); /* Changed from 0.2 to 0.5 */
     transform: translateY(-2px);
+}
+
+/* Make social icons more visible */
+.au-social-link svg {
+    fill: var(--au-white);
+    opacity: 0.9;
+}
+
+.au-social-link:hover svg {
+    opacity: 1;
 }
 
 .au-footer-text {
