@@ -18,6 +18,99 @@ const translations = {
         'home.hero.cta': 'Explore Museum',
         
         // Homepage Intro
+        'home.intro.title': 'A window to nature\'s diversity',
+        'home.intro.subtitle': 'With over 150 years of history and more than 5 million objects, we are one of Denmark\'s leading natural history museums',
+        
+        // Homepage Features
+        'home.visit.title': 'Plan your visit',
+        'home.visit.text1': 'We have been working hard on new, interesting exhibitions, and we look forward to your visit.',
+        'home.visit.text2': 'Our museum offers a unique opportunity to explore natural history through interactive exhibits and fascinating displays.',
+        'home.visit.cta': 'Opening Hours & Tickets',
+        
+        'home.exhibitions.title': 'Exhibitions',
+        'home.exhibitions.text1': 'Get up close and personal with animals of the world. Visit our exhibitions with more than 2000 preserved animals and make sure to see our special exhibition as well.',
+        'home.exhibitions.text2': 'Our collections span from prehistoric fossils to modern species, offering insights into the diversity and evolution of life on Earth.',
+        'home.exhibitions.cta': 'Current Exhibitions',
+        
+        'home.kids.title': 'Kid-friendly Museum',
+        'home.kids.text1': 'Natural History Museum is for all ages, but children especially. Find out why.',
+        'home.kids.text2': 'We offer interactive exhibits designed specifically for young explorers, with hands-on activities that make learning about nature fun and engaging.',
+        'home.kids.cta': 'Activities for Children',
+        
+        'home.mols.title': 'The Mols Laboratory Research Station',
+        'home.mols.text1': 'The Mols Laboratory is the museum\'s research station in Mols Bjerge, approx. 40 minutes drive from Aarhus. The scenic landscape and marked trails are perfect for a day trip.',
+        'home.mols.text2': 'This unique facility allows visitors to see scientific research in action and explore the beautiful natural surroundings.',
+        'home.mols.cta': 'Visit Mols Laboratory',
+        
+        // Homepage Digital CTA
+        'home.digital.title': 'Enhance Your Visit with Our Digital Experience',
+        'home.digital.text': 'Try our new Safari Quiz app to test your knowledge about animals and their survival tactics.',
+        'home.digital.cta': 'Discover Safari Quiz',
+        
+        // Homepage Events
+        'home.events.title': 'Upcoming Events',
+        'home.events.subtitle': 'Join our exciting events and learn more about nature',
+        
+        'home.event1.title': 'Climate Change and Biodiversity',
+        'home.event1.text': 'Learn about how climate change affects the world\'s wildlife and what we can do to protect biodiversity.',
+        'home.event1.cta': 'Read More',
+        
+        'home.event2.title': 'Fossil Workshop for Kids',
+        'home.event2.text': 'Learn about fossils and paleontology through fun activities. Perfect for children ages 7-12.',
+        'home.event2.cta': 'Register',
+        
+        'home.event3.title': 'Secrets of the Ocean',
+        'home.event3.text': 'Dive into the depths of the ocean and experience the fantastic creatures that live in our oceans.',
+        'home.event3.cta': 'View Exhibition',
+        
+        // Safari Quiz Page
+        'safari.hero.title': 'Discover <strong>Safari Quiz</strong>',
+        'safari.hero.subtitle': 'A revolutionary digital experience designed to transform your visit to the Natural History Museum. Test your survival knowledge and learn about fascinating animals through an interactive quiz adventure.',
+        
+        'safari.intro.title': 'How Safari Quiz Works',
+        'safari.intro.text1': 'An innovative digital experience that transforms museum visits through interactive learning. Safari Quiz combines educational content with gamification to teach visitors about wildlife behaviors and survival strategies.',
+        'safari.intro.text2': 'Using cutting-edge technology, the app creates a personalized journey that connects exhibits with practical knowledge about animal encounters.',
+        
+        // Steps
+        'safari.step1.title': 'Scan QR Code',
+        'safari.step1.text1': 'Begin your adventure by scanning a QR code placed next to an exhibit in the museum. Each QR code launches the Safari Quiz app and connects you to that specific section of the museum.',
+        'safari.step1.text2': 'The QR codes are strategically placed throughout the museum to guide your exploration.',
+        
+        'safari.step2.title': 'Choose Your Animal',
+        'safari.step2.text': 'After scanning the QR code, you\'ll be presented with a selection of animals related to the exhibit. Pick the animal you want to learn more about from the available options.',
+        
+        'safari.step3.title': 'Learn About the Animal',
+        'safari.step3.text': 'Once you\'ve selected an animal, the app will display detailed information about it, including its habitat, behaviors, and survival tactics. Take your time to learn these facts - they\'ll help you in the next step!',
+        
+        'safari.step4.title': 'Take the Safari Quiz',
+        'safari.step4.text1': 'Hit the Start button to begin a 4-question safari quiz that tests whether you know how to behave if you encounter this animal in the wild. The quiz simulates real-life scenarios and challenges you to make the right decisions.',
+        'safari.step4.text2': 'Each question tests a different aspect of animal behavior and human-animal interaction safety.',
+        
+        'safari.step5.title': 'Get Your Feedback',
+        'safari.step5.text1': 'Based on your answers in the quiz, you\'ll receive personalized feedback about how well you would handle an encounter with this animal in the wild.',
+        'safari.step5.text2': 'Learn about the consequences of your decisions and gain valuable insights into animal behavior that could one day save your life in a real wilderness encounter.',
+        
+        'safari.cta.title': 'Ready to test your knowledge?',
+        'safari.cta.text': 'Visit the Natural History Museum today and experience Safari Quiz. An unforgettable learning adventure awaits!',
+        'safari.cta.button': 'Plan Your Visit',
+        
+        // Footer
+        'footer.rights': 'All rights reserved.',
+        'footer.address': 'Wilhelm Meyers Allé 10, Building 1137 · 8000 Aarhus C · Tel: +45 8715 0000'
+    },
+    da: {
+        // Navigation
+        'nav.home': 'Forside',
+        'nav.safari': 'Safari Quiz',
+        'nav.about': 'Om os',
+        'nav.contact': 'Kontakt',
+        
+        // Homepage Hero
+        'home.hero.title': 'Velkommen til <strong>Naturhistorisk Museum</strong>',
+        'home.hero.subtitle': 'Oplev naturens vidundere på Aarhus Universitets naturhistoriske museum. Udforsk vores udstillinger og lær om den fascinerende verden af dyr og natur.',
+        'home.hero.cta': 'Udforsk museet',
+        
+        // Homepage Intro
         'home.intro.title': 'Et vindue til naturens mangfoldighed',
         'home.intro.subtitle': 'Med over 150 års historie og mere end 5 millioner genstande er vi et af Danmarks førende naturhistoriske museer',
         
@@ -251,96 +344,3 @@ window.AUMuseum = {
     currentLanguage: () => currentLanguage,
     translate: (key) => translations[currentLanguage][key] || key
 };
-        'home.intro.title': 'A window to nature\'s diversity',
-        'home.intro.subtitle': 'With over 150 years of history and more than 5 million objects, we are one of Denmark\'s leading natural history museums',
-        
-        // Homepage Features
-        'home.visit.title': 'Plan your visit',
-        'home.visit.text1': 'We have been working hard on new, interesting exhibitions, and we look forward to your visit.',
-        'home.visit.text2': 'Our museum offers a unique opportunity to explore natural history through interactive exhibits and fascinating displays.',
-        'home.visit.cta': 'Opening Hours & Tickets',
-        
-        'home.exhibitions.title': 'Exhibitions',
-        'home.exhibitions.text1': 'Get up close and personal with animals of the world. Visit our exhibitions with more than 2000 preserved animals and make sure to see our special exhibition as well.',
-        'home.exhibitions.text2': 'Our collections span from prehistoric fossils to modern species, offering insights into the diversity and evolution of life on Earth.',
-        'home.exhibitions.cta': 'Current Exhibitions',
-        
-        'home.kids.title': 'Kid-friendly Museum',
-        'home.kids.text1': 'Natural History Museum is for all ages, but children especially. Find out why.',
-        'home.kids.text2': 'We offer interactive exhibits designed specifically for young explorers, with hands-on activities that make learning about nature fun and engaging.',
-        'home.kids.cta': 'Activities for Children',
-        
-        'home.mols.title': 'The Mols Laboratory Research Station',
-        'home.mols.text1': 'The Mols Laboratory is the museum\'s research station in Mols Bjerge, approx. 40 minutes drive from Aarhus. The scenic landscape and marked trails are perfect for a day trip.',
-        'home.mols.text2': 'This unique facility allows visitors to see scientific research in action and explore the beautiful natural surroundings.',
-        'home.mols.cta': 'Visit Mols Laboratory',
-        
-        // Homepage Digital CTA
-        'home.digital.title': 'Enhance Your Visit with Our Digital Experience',
-        'home.digital.text': 'Try our new Safari Quiz app to test your knowledge about animals and their survival tactics.',
-        'home.digital.cta': 'Discover Safari Quiz',
-        
-        // Homepage Events
-        'home.events.title': 'Upcoming Events',
-        'home.events.subtitle': 'Join our exciting events and learn more about nature',
-        
-        'home.event1.title': 'Climate Change and Biodiversity',
-        'home.event1.text': 'Learn about how climate change affects the world\'s wildlife and what we can do to protect biodiversity.',
-        'home.event1.cta': 'Read More',
-        
-        'home.event2.title': 'Fossil Workshop for Kids',
-        'home.event2.text': 'Learn about fossils and paleontology through fun activities. Perfect for children ages 7-12.',
-        'home.event2.cta': 'Register',
-        
-        'home.event3.title': 'Secrets of the Ocean',
-        'home.event3.text': 'Dive into the depths of the ocean and experience the fantastic creatures that live in our oceans.',
-        'home.event3.cta': 'View Exhibition',
-        
-        // Safari Quiz Page
-        'safari.hero.title': 'Discover <strong>Safari Quiz</strong>',
-        'safari.hero.subtitle': 'A revolutionary digital experience designed to transform your visit to the Natural History Museum. Test your survival knowledge and learn about fascinating animals through an interactive quiz adventure.',
-        
-        'safari.intro.title': 'How Safari Quiz Works',
-        'safari.intro.text1': 'An innovative digital experience that transforms museum visits through interactive learning. Safari Quiz combines educational content with gamification to teach visitors about wildlife behaviors and survival strategies.',
-        'safari.intro.text2': 'Using cutting-edge technology, the app creates a personalized journey that connects exhibits with practical knowledge about animal encounters.',
-        
-        // Steps
-        'safari.step1.title': 'Scan QR Code',
-        'safari.step1.text1': 'Begin your adventure by scanning a QR code placed next to an exhibit in the museum. Each QR code launches the Safari Quiz app and connects you to that specific section of the museum.',
-        'safari.step1.text2': 'The QR codes are strategically placed throughout the museum to guide your exploration.',
-        
-        'safari.step2.title': 'Choose Your Animal',
-        'safari.step2.text': 'After scanning the QR code, you\'ll be presented with a selection of animals related to the exhibit. Pick the animal you want to learn more about from the available options.',
-        
-        'safari.step3.title': 'Learn About the Animal',
-        'safari.step3.text': 'Once you\'ve selected an animal, the app will display detailed information about it, including its habitat, behaviors, and survival tactics. Take your time to learn these facts - they\'ll help you in the next step!',
-        
-        'safari.step4.title': 'Take the Safari Quiz',
-        'safari.step4.text1': 'Hit the Start button to begin a 4-question safari quiz that tests whether you know how to behave if you encounter this animal in the wild. The quiz simulates real-life scenarios and challenges you to make the right decisions.',
-        'safari.step4.text2': 'Each question tests a different aspect of animal behavior and human-animal interaction safety.',
-        
-        'safari.step5.title': 'Get Your Feedback',
-        'safari.step5.text1': 'Based on your answers in the quiz, you\'ll receive personalized feedback about how well you would handle an encounter with this animal in the wild.',
-        'safari.step5.text2': 'Learn about the consequences of your decisions and gain valuable insights into animal behavior that could one day save your life in a real wilderness encounter.',
-        
-        'safari.cta.title': 'Ready to test your knowledge?',
-        'safari.cta.text': 'Visit the Natural History Museum today and experience Safari Quiz. An unforgettable learning adventure awaits!',
-        'safari.cta.button': 'Plan Your Visit',
-        
-        // Footer
-        'footer.rights': 'All rights reserved.',
-        'footer.address': 'Wilhelm Meyers Allé 10, Building 1137 · 8000 Aarhus C · Tel: +45 8715 0000'
-    },
-    da: {
-        // Navigation
-        'nav.home': 'Forside',
-        'nav.safari': 'Safari Quiz',
-        'nav.about': 'Om os',
-        'nav.contact': 'Kontakt',
-        
-        // Homepage Hero
-        'home.hero.title': 'Velkommen til <strong>Naturhistorisk Museum</strong>',
-        'home.hero.subtitle': 'Oplev naturens vidundere på Aarhus Universitets naturhistoriske museum. Udforsk vores udstillinger og lær om den fascinerende verden af dyr og natur.',
-        'home.hero.cta': 'Udforsk museet',
-        
-        // Homepage Intro
