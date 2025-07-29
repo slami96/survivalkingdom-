@@ -305,9 +305,15 @@ function updateActiveNav() {
         link.classList.remove('active');
         const linkHref = link.getAttribute('href');
         
+        // Only mark as active if it's an actual page match, not # links
         if (linkHref === currentPage || 
-            (currentPage === 'index.html' && linkHref === '#') ||
+            (currentPage === 'index.html' && linkHref === 'index.html') ||
             (currentPage === '' && linkHref === 'index.html')) {
+            link.classList.add('active');
+        }
+        
+        // Special handling for explore.html
+        if (currentPage === 'explore.html' && linkHref === 'explore.html') {
             link.classList.add('active');
         }
     });
