@@ -65,33 +65,33 @@ const translations = {
         
         // Safari Quiz Page
         'safari.hero.title': 'Discover <strong>Safari Quiz</strong>',
-        'safari.hero.subtitle': 'A revolutionary digital experience designed to transform your visit to the Natural History Museum. Test your survival knowledge and learn about fascinating animals through an interactive quiz adventure.',
+        'safari.hero.subtitle': 'Test your knowledge about African wildlife and win a free coffee! Challenge yourself with 10 exciting questions about safari animals and their fascinating behaviors.',
         
         'safari.intro.title': 'How Safari Quiz Works',
-        'safari.intro.text1': 'An innovative digital experience that transforms museum visits through interactive learning. Safari Quiz combines educational content with gamification to teach visitors about wildlife behaviors and survival strategies.',
-        'safari.intro.text2': 'Using cutting-edge technology, the app creates a personalized journey that connects exhibits with practical knowledge about animal encounters.',
+        'safari.intro.text1': 'An exciting interactive quiz experience that tests your knowledge about African wildlife. Answer 10 questions correctly within the time limit to earn a free coffee voucher!',
+        'safari.intro.text2': 'Perfect for museum visitors of all ages who want to learn about safari animals while enjoying a fun challenge with a rewarding prize.',
         
         // Steps
-        'safari.step1.title': 'Scan QR Code',
-        'safari.step1.text1': 'Begin your adventure by scanning a QR code placed next to an exhibit in the museum. Each QR code launches the Safari Quiz app and connects you to that specific section of the museum.',
-        'safari.step1.text2': 'The QR codes are strategically placed throughout the museum to guide your exploration.',
+        'safari.step1.title': 'Choose Your Language',
+        'safari.step1.text1': 'Start your Safari Quiz adventure by selecting your preferred language - Danish or English. The entire quiz experience will be presented in your chosen language.',
+        'safari.step1.text2': 'Simply tap the language button on the welcome screen to begin your wildlife knowledge journey.',
         
-        'safari.step2.title': 'Choose Your Animal',
-        'safari.step2.text': 'After scanning the QR code, you\'ll be presented with a selection of animals related to the exhibit. Pick the animal you want to learn more about from the available options.',
+        'safari.step2.title': 'Learn the Rules',
+        'safari.step2.text': 'Welcome to Safari Quiz! You\'ll answer 10 multiple-choice questions about African wildlife. Each question has a 15-second time limit. Score 8 or more correct answers to win a free coffee voucher for our museum café!',
         
-        'safari.step3.title': 'Learn About the Animal',
-        'safari.step3.text': 'Once you\'ve selected an animal, the app will display detailed information about it, including its habitat, behaviors, and survival tactics. Take your time to learn these facts - they\'ll help you in the next step!',
+        'safari.step3.title': 'Answer Safari Questions',
+        'safari.step3.text': 'Test your knowledge with 10 carefully crafted questions about African wildlife, their habitats, behaviors, and survival strategies. Watch the timer - you have 15 seconds per question!',
         
-        'safari.step4.title': 'Take the Safari Quiz',
-        'safari.step4.text1': 'Hit the Start button to begin a 4-question safari quiz that tests whether you know how to behave if you encounter this animal in the wild. The quiz simulates real-life scenarios and challenges you to make the right decisions.',
-        'safari.step4.text2': 'Each question tests a different aspect of animal behavior and human-animal interaction safety.',
+        'safari.step4.title': 'Experience the Challenge',
+        'safari.step4.text1': 'Navigate through diverse questions covering various African animals - from majestic lions and elephants to fascinating birds and reptiles.',
+        'safari.step4.text2': 'Each question is designed to be both educational and entertaining, helping you learn interesting facts about safari wildlife.',
         
-        'safari.step5.title': 'Get Your Feedback',
-        'safari.step5.text1': 'Based on your answers in the quiz, you\'ll receive personalized feedback about how well you would handle an encounter with this animal in the wild.',
-        'safari.step5.text2': 'Learn about the consequences of your decisions and gain valuable insights into animal behavior that could one day save your life in a real wilderness encounter.',
+        'safari.step5.title': 'Get Your Results',
+        'safari.step5.text1': 'Score 8 or more correct? Congratulations! You\'ll receive a QR code for a free coffee voucher to redeem at our museum café.',
+        'safari.step5.text2': 'Scored less than 8? No worries! You\'ll see the correct answers for the questions you missed, helping you learn more about African wildlife. Plus, you can always try again!',
         
-        'safari.cta.title': 'Ready to test your knowledge?',
-        'safari.cta.text': 'Visit the Natural History Museum today and experience Safari Quiz. An unforgettable learning adventure awaits!',
+        'safari.cta.title': 'Ready to test your safari knowledge?',
+        'safari.cta.text': 'Visit the Natural History Museum today and take the Safari Quiz challenge. Learn about amazing African wildlife and maybe win a free coffee!',
         'safari.cta.button': 'Plan Your Visit',
         
         // Footer
@@ -158,33 +158,33 @@ const translations = {
         
         // Safari Quiz Page
         'safari.hero.title': 'Oplev <strong>Safari Quiz</strong>',
-        'safari.hero.subtitle': 'En revolutionerende digital oplevelse designet til at transformere dit besøg på Naturhistorisk Museum. Test din overlevelseskundskab og lær om fascinerende dyr gennem et interaktivt quizeventyr.',
+        'safari.hero.subtitle': 'Test din viden om Afrikas dyreliv og vind en gratis kaffe! Udfordr dig selv med 10 spændende spørgsmål om safaridyr og deres fascinerende adfærd.',
         
         'safari.intro.title': 'Sådan fungerer Safari Quiz',
-        'safari.intro.text1': 'En innovativ digital oplevelse der transformerer museumsbesøg gennem interaktiv læring. Safari Quiz kombinerer uddannelsesindhold med gamification for at lære besøgende om dyrs adfærd og overlevelsesstrategier.',
-        'safari.intro.text2': 'Ved hjælp af banebrydende teknologi skaber appen en personlig rejse, der forbinder udstillinger med praktisk viden om møder med dyr.',
+        'safari.intro.text1': 'En spændende interaktiv quiz-oplevelse der tester din viden om Afrikas dyreliv. Svar rigtigt på 10 spørgsmål inden for tidsgrænsen for at vinde en gratis kaffekupon!',
+        'safari.intro.text2': 'Perfekt for museumsbesøgende i alle aldre, der vil lære om safaridyr, mens de nyder en sjov udfordring med en givende præmie.',
         
         // Steps
-        'safari.step1.title': 'Scan QR-koden',
-        'safari.step1.text1': 'Begynd dit eventyr ved at scanne en QR-kode placeret ved siden af en udstilling i museet. Hver QR-kode starter Safari Quiz-appen og forbinder dig til den specifikke sektion af museet.',
-        'safari.step1.text2': 'QR-koderne er strategisk placeret gennem hele museet for at guide din udforskning.',
+        'safari.step1.title': 'Vælg dit sprog',
+        'safari.step1.text1': 'Start dit Safari Quiz-eventyr ved at vælge dit foretrukne sprog - dansk eller engelsk. Hele quiz-oplevelsen vil blive præsenteret på dit valgte sprog.',
+        'safari.step1.text2': 'Tryk blot på sprogknappen på velkomstskærmen for at begynde din rejse ind i dyrelivets viden.',
         
-        'safari.step2.title': 'Vælg dit dyr',
-        'safari.step2.text': 'Efter scanning af QR-koden præsenteres du for et udvalg af dyr relateret til udstillingen. Vælg det dyr, du vil lære mere om, fra de tilgængelige muligheder.',
+        'safari.step2.title': 'Lær reglerne',
+        'safari.step2.text': 'Velkommen til Safari Quiz! Du skal besvare 10 multiple choice-spørgsmål om Afrikas dyreliv. Hvert spørgsmål har en tidsbegrænsning på 15 sekunder. Få 8 eller flere rigtige svar for at vinde en gratis kaffekupon til vores museumscafé!',
         
-        'safari.step3.title': 'Lær om dyret',
-        'safari.step3.text': 'Når du har valgt et dyr, viser appen detaljerede oplysninger om det, herunder dets levesteder, adfærd og overlevelsestaktikker. Tag dig tid til at lære disse fakta - de hjælper dig i næste trin!',
+        'safari.step3.title': 'Besvar safari-spørgsmål',
+        'safari.step3.text': 'Test din viden med 10 omhyggeligt udformede spørgsmål om Afrikas dyreliv, deres levesteder, adfærd og overlevelsesstrategier. Hold øje med timeren - du har 15 sekunder per spørgsmål!',
         
-        'safari.step4.title': 'Tag safari-quizzen',
-        'safari.step4.text1': 'Tryk på Start-knappen for at begynde en 4-spørgsmåls safari-quiz, der tester, om du ved, hvordan du skal opføre dig, hvis du møder dette dyr i naturen. Quizzen simulerer virkelige scenarier og udfordrer dig til at træffe de rigtige beslutninger.',
-        'safari.step4.text2': 'Hvert spørgsmål tester et forskelligt aspekt af dyreadfærd og sikkerhed ved interaktion mellem mennesker og dyr.',
+        'safari.step4.title': 'Oplev udfordringen',
+        'safari.step4.text1': 'Naviger gennem forskellige spørgsmål, der dækker forskellige afrikanske dyr - fra majestætiske løver og elefanter til fascinerende fugle og krybdyr.',
+        'safari.step4.text2': 'Hvert spørgsmål er designet til at være både lærerigt og underholdende og hjælper dig med at lære interessante fakta om safaridyreliv.',
         
-        'safari.step5.title': 'Få din feedback',
-        'safari.step5.text1': 'Baseret på dine svar i quizzen modtager du personlig feedback om, hvor godt du ville klare et møde med dette dyr i naturen.',
-        'safari.step5.text2': 'Lær om konsekvenserne af dine beslutninger og få værdifuld indsigt i dyreadfærd, der en dag kunne redde dit liv i et virkeligt vildmarkssmøde.',
+        'safari.step5.title': 'Få dine resultater',
+        'safari.step5.text1': 'Fik du 8 eller flere rigtige? Tillykke! Du modtager en QR-kode til en gratis kaffekupon, som du kan indløse i vores museumscafé.',
+        'safari.step5.text2': 'Fik du mindre end 8 rigtige? Ingen bekymringer! Du får vist de rigtige svar på de spørgsmål, du missede, hvilket hjælper dig med at lære mere om Afrikas dyreliv. Desuden kan du altid prøve igen!',
         
-        'safari.cta.title': 'Klar til at teste din viden?',
-        'safari.cta.text': 'Besøg Naturhistorisk Museum i dag og oplev Safari Quiz. En uforglemmelig læringseventyr venter!',
+        'safari.cta.title': 'Klar til at teste din safari-viden?',
+        'safari.cta.text': 'Besøg Naturhistorisk Museum i dag og tag Safari Quiz-udfordringen. Lær om fantastiske afrikanske dyr og vind måske en gratis kaffe!',
         'safari.cta.button': 'Planlæg dit besøg',
         
         // Footer
