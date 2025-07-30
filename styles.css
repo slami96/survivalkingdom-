@@ -513,6 +513,7 @@ a:hover {
 .au-step:nth-child(3) .au-step-number { color: rgba(0, 161, 154, 0.15); } /* Teal */
 .au-step:nth-child(4) .au-step-number { color: rgba(58, 170, 53, 0.15); } /* Green */
 .au-step:nth-child(5) .au-step-number { color: rgba(250, 187, 0, 0.15); } /* Yellow */
+.au-step:nth-child(6) .au-step-number { color: rgba(226, 0, 26, 0.15); } /* Red */
 
 .au-step-content {
     flex: 1;
